@@ -41,7 +41,7 @@ log() {
     else
       log "=== END ==="       
       log "-=Complete=-"
-      ${SENDMAIL} ssh-drop-Execute "${LOG_FILE}"
+      ${SENDMAIL} ssh-drop-Complete "${LOG_FILE}"
     fi
 
   elif [[ "$SUCCESS" == true ]]; then

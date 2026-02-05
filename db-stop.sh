@@ -8,14 +8,16 @@ DB_PASS="kjs202512"     # ✅ 추가
 AWS="/usr/local/bin/aws"
 SENDMAIL="/home/ec2-user/bin/sendmail-file"
 LOG_DIR="/home/ec2-user/batch/log"
-LOG_FILE="${LOG_DIR}/db-stop.log"
 
-MAX_LOOP=3         # 5분 × 12 = 60분
+TODAY=$(date '+%Y-%m-%d')
+LOG_FILE="${LOG_DIR}/db-stop-${TODAY}.log"
+
+MAX_LOOP=10         # 5분 × 12 = 60분
 SLEEP_SEC=300       # 5분= 300
 
 export PGPASSWORD="${DB_PASS}"
 
-echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" > "${LOG_FILE}"
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" >> "${LOG_FILE}"
 
 log() {
   echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" >> "${LOG_FILE}"

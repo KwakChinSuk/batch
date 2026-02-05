@@ -13,6 +13,16 @@ REPORT="$(df -h \
 # 첫 번째 pcent 값 추출 (예: "45%")
 FIRST_PCENT="$(echo "$REPORT" | awk 'NR==1 {print $5}')"
 
+# 퍼센트에서 숫자만 추출 (예: "45%" → 45)
+PCENT_NUM=${FIRST_PCENT%\%}
+
+# 90% 기준으로 O/X 표시 결정
+if [ "$PCENT_NUM" -le 90 ]; then
+  STATUS_MARK="O"
+else
+  STATUS_MARK="X"
+fi
+
 MSG=$(
   cat <<EOF
 [EC2 HDD $FIRST_PCENT / 90%]
@@ -24,5 +34,6 @@ $REPORT
 EOF
 )
 
-/usr/local/bin/aws ses send-email --from alog@alog.ai.kr --destination ToAddresses=kjs819@gmail.com --message "Subject={Data='[w01] HDD ($FIRST_PCENT)  ',Charset='UTF-8'},Body={Text={Data='${MSG}',Charset='UTF-8'}}"
+/usr/local/bin/aws ses send-email --from alog@alog.ai.kr --destination ToAddresses=kjs819@gmail.com --message "Subject={Data='[w01, $STATUS_MARK ] HDD ($FIRST_PCENT) ',Charset='UTF-8'},Body={Text={Data='${MSG}',Charset='UTF-8'}}"
+
 

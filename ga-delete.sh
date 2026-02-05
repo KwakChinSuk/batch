@@ -8,6 +8,7 @@ SENDMAIL="/home/ec2-user/bin/sendmail-file"
 
 cd "${BASE_DIR}" || exit 1
 
-${PYTHON} alog_ga_app/ga_to_db.py DataDelete  > "${LOG_DIR}/ga-DataDelete-${APP_NAME}.log" 2>&1 &
+${PYTHON} alog_ga_app/ga_to_db.py DataDelete  > "${LOG_DIR}/ga-DataDelete-${APP_NAME}.log" 2>&1
 
+${SENDMAIL} ga-delete[${APP_NAME}]-complete   ${LOG_DIR}/ga-DataDelete-${APP_NAME}.log
 

@@ -10,5 +10,5 @@ sudo systemctl restart alog-half.service
 echo sudo systemctl restart nginx
 sudo systemctl restart nginx
 
-cd /home/ec2-user/alog/alog-bori && /usr/bin/python3 alog_ga_app/sendmail.py nginx-all-restart OK
+cd /home/ec2-user/alog/alog-bori && /usr/bin/python3 alog_ga_app/sendmail.py nginx-all-restart "<span style='color: blue;'>⭕</span> OK "
 
