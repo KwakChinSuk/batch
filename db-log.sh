@@ -5,3 +5,4 @@ echo "-=Complete=-" >> /home/ec2-user/batch/log/db-log.log
 
 /home/ec2-user/bin/sendmail-file db03-start-checklog /home/ec2-user/batch/log/db-log.log
 
+
