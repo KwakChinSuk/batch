@@ -15,7 +15,7 @@ ${PYTHON} alog_ga_app/ga_to_db.py -2  > "${LOG_DIR}/ga-${APP_NAME}.log" 2>&1
 chown -R ec2-user:ec2-user "${BASE_DIR}"
 
 sleep 3
-${SENDMAIL} ga-complete[${APP_NAME}]  ${LOG_DIR}/ga-${APP_NAME}.log
+#${SENDMAIL} ga-complete[${APP_NAME}]  ${LOG_DIR}/ga-${APP_NAME}.log
 
 
 # 1. APP_NAME에 따라 URL 설정
@@ -39,6 +39,6 @@ sleep 1
 /usr/bin/curl -f -s -S "${TARGET_URL}?pbatchcode=alog-api@cskwak-152504.iam.gserviceaccount.com" > /home/ec2-user/batch/www-check-log/ga-complete-${APP_NAME}.log 2>&1
 
 sleep 1
-${SENDMAIL} http-check[${APP_NAME}] /home/ec2-user/batch/www-check-log/ga-complete-${APP_NAME}.log
+${SENDMAIL} [${APP_NAME}]http-check /home/ec2-user/batch/www-check-log/ga-complete-${APP_NAME}.log
 
 
