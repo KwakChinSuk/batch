@@ -45,7 +45,7 @@ for ((i=1; i<=MAX_LOOP; i++)); do
         log "batch count is 1. stopping RDS."
         ${AWS} rds stop-db-instance --db-instance-identifier db03 >> "${LOG_FILE}" 2>&1
         log "Stop DB Execute. -=Complete=-"
-	${SENDMAIL} db03-stop-Execute "${LOG_FILE}"
+	${SENDMAIL} db03-stop "${LOG_FILE}"
         unset PGPASSWORD
         exit 0
     fi
