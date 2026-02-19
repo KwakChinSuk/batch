@@ -1,0 +1,7 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><title>User List</title></head><body>
+<h2>전체 사용자 목록</h2><ul>
+
+<li>alog-half (홍길동) (pbkdf2_sha256$600000$h1CH7pjfkY9z0fdn9jGtox$YWykyVOJALeZ++pEohP2bxBL4dDrTyn1XhTJ3h8HLqY=)</li>
+
+</ul><h2><button type="submit" class="btn btn-danger w-100" onclick="window.location.href='/logout_all_users/'">전체 사용자 로그아웃 실행</button><button type="submit" class="btn btn-danger w-100" onclick="window.location.href='/'">메인 화면</button></h2>
+<!-- -=Complete=- --></body></html>

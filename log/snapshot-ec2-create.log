@@ -1,0 +1,13 @@
+{
+    "Tags": [],
+    "SnapshotId": "snap-0cc160b677e2bdf80",
+    "VolumeId": "vol-0e3c8e4e3807e9318",
+    "State": "pending",
+    "StartTime": "2026-02-18T22:51:03.085000+00:00",
+    "Progress": "",
+    "OwnerId": "856699698595",
+    "Description": "w01 full backup",
+    "VolumeSize": 8,
+    "Encrypted": false
+}
+-=Complete=-

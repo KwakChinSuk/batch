@@ -1,0 +1,90 @@
+[2026-02-13 09:58:01] 
+[2026-02-13 09:58:01] DB Connect 
+[2026-02-13 09:58:01] check 1/10 : running batch count = '1'
+[2026-02-13 09:58:01] CNT != 1 (CNT=1). waiting...
+[2026-02-13 10:01:02] DB Connect 
+[2026-02-13 10:01:02] check 2/10 : running batch count = '1'
+[2026-02-13 10:01:02] CNT != 1 (CNT=1). waiting...
+[2026-02-13 10:04:03] DB Connect 
+[2026-02-13 10:04:03] check 3/10 : running batch count = '1'
+[2026-02-13 10:04:03] CNT != 1 (CNT=1). waiting...
+[2026-02-13 10:07:04] DB Connect 
+[2026-02-13 10:07:04] check 4/10 : running batch count = '1'
+[2026-02-13 10:07:04] CNT != 1 (CNT=1). waiting...
+[2026-02-13 10:10:04] DB Connect 
+[2026-02-13 10:10:04] check 5/10 : running batch count = '1'
+[2026-02-13 10:10:04] CNT != 1 (CNT=1). waiting...
+[2026-02-13 10:13:05] DB Connect 
+[2026-02-13 10:13:05] check 6/10 : running batch count = ''
+[2026-02-13 10:13:05] CNT is empty. exit.
+[2026-02-13 10:13:05] -=Complete=-
+[2026-02-13 10:58:01] 
+[2026-02-13 10:58:01] DB Connect 
+[2026-02-13 10:58:32] check 1/10 : running batch count = ''
+[2026-02-13 10:58:32] CNT is empty. exit.
+[2026-02-13 10:58:32] -=Complete=-
+[2026-02-13 11:58:01] 
+[2026-02-13 11:58:01] DB Connect 
+[2026-02-13 11:58:32] check 1/10 : running batch count = ''
+[2026-02-13 11:58:32] CNT is empty. exit.
+[2026-02-13 11:58:32] -=Complete=-
+[2026-02-13 12:58:01] 
+[2026-02-13 12:58:01] DB Connect 
+[2026-02-13 12:58:31] check 1/10 : running batch count = ''
+[2026-02-13 12:58:31] CNT is empty. exit.
+[2026-02-13 12:58:31] -=Complete=-
+[2026-02-13 13:58:01] 
+[2026-02-13 13:58:01] DB Connect 
+[2026-02-13 13:58:31] check 1/10 : running batch count = ''
+[2026-02-13 13:58:31] CNT is empty. exit.
+[2026-02-13 13:58:31] -=Complete=-
+[2026-02-13 14:58:02] 
+[2026-02-13 14:58:02] DB Connect 
+[2026-02-13 14:58:32] check 1/10 : running batch count = ''
+[2026-02-13 14:58:32] CNT is empty. exit.
+[2026-02-13 14:58:32] -=Complete=-
+[2026-02-13 15:58:02] 
+[2026-02-13 15:58:02] DB Connect 
+[2026-02-13 15:58:32] check 1/10 : running batch count = ''
+[2026-02-13 15:58:32] CNT is empty. exit.
+[2026-02-13 15:58:32] -=Complete=-
+[2026-02-13 16:58:01] 
+[2026-02-13 16:58:01] DB Connect 
+[2026-02-13 16:58:32] check 1/10 : running batch count = ''
+[2026-02-13 16:58:32] CNT is empty. exit.
+[2026-02-13 16:58:32] -=Complete=-
+[2026-02-13 17:58:01] 
+[2026-02-13 17:58:01] DB Connect 
+[2026-02-13 17:58:31] check 1/10 : running batch count = ''
+[2026-02-13 17:58:31] CNT is empty. exit.
+[2026-02-13 17:58:31] -=Complete=-
+[2026-02-13 18:58:01] 
+[2026-02-13 18:58:01] DB Connect 
+[2026-02-13 18:58:32] check 1/10 : running batch count = ''
+[2026-02-13 18:58:32] CNT is empty. exit.
+[2026-02-13 18:58:32] -=Complete=-
+[2026-02-13 19:58:01] 
+[2026-02-13 19:58:01] DB Connect 
+[2026-02-13 19:58:31] check 1/10 : running batch count = ''
+[2026-02-13 19:58:31] CNT is empty. exit.
+[2026-02-13 19:58:31] -=Complete=-
+[2026-02-13 20:58:01] 
+[2026-02-13 20:58:01] DB Connect 
+[2026-02-13 20:58:32] check 1/10 : running batch count = ''
+[2026-02-13 20:58:32] CNT is empty. exit.
+[2026-02-13 20:58:32] -=Complete=-
+[2026-02-13 21:58:02] 
+[2026-02-13 21:58:02] DB Connect 
+[2026-02-13 21:58:32] check 1/10 : running batch count = ''
+[2026-02-13 21:58:32] CNT is empty. exit.
+[2026-02-13 21:58:32] -=Complete=-
+[2026-02-13 22:58:01] 
+[2026-02-13 22:58:01] DB Connect 
+[2026-02-13 22:58:32] check 1/10 : running batch count = ''
+[2026-02-13 22:58:32] CNT is empty. exit.
+[2026-02-13 22:58:32] -=Complete=-
+[2026-02-13 23:58:02] 
+[2026-02-13 23:58:02] DB Connect 
+[2026-02-13 23:58:32] check 1/10 : running batch count = ''
+[2026-02-13 23:58:32] CNT is empty. exit.
+[2026-02-13 23:58:32] -=Complete=-

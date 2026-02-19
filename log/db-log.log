@@ -1,0 +1,17 @@
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                                      DescribeEvents                                                                      |
++-------+-------------------------------------------------------------------------------------------------------------+------------------------------------+
+| Level |                                                     Msg                                                     |               Time                 |
++-------+-------------------------------------------------------------------------------------------------------------+------------------------------------+
+|  None |  Performance Insights has been enabled                                                                      |  2026-02-19T00:03:03.552000+00:00  |
+|  None |  Monitoring Interval changed to 0                                                                           |  2026-02-19T00:03:03.552000+00:00  |
+|  None |  DB instance restarted                                                                                      |  2026-02-19T00:01:23.303000+00:00  |
+|  None |  DB instance shutdown                                                                                       |  2026-02-19T00:01:12.357000+00:00  |
+|  None |  DB instance started                                                                                        |  2026-02-19T00:01:08.572000+00:00  |
+|  None |  Recovery of the DB instance is complete.                                                                   |  2026-02-18T23:58:29.232000+00:00  |
+|  None |  DB instance restarted                                                                                      |  2026-02-18T23:58:02.983000+00:00  |
+|  None |  Recovery of the DB instance has started. Recovery time will vary with the amount of data to be recovered.  |  2026-02-18T23:56:18.832000+00:00  |
+|  None |  Recovery of the DB instance has started. Recovery time will vary with the amount of data to be recovered.  |  2026-02-18T23:55:48.647000+00:00  |
+|  None |  Recovery of the DB instance has started. Recovery time will vary with the amount of data to be recovered.  |  2026-02-18T23:55:18.455000+00:00  |
++-------+-------------------------------------------------------------------------------------------------------------+------------------------------------+
+-=Complete=-

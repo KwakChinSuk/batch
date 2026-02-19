@@ -1,0 +1,211 @@
+[2026-02-12 09:58:01] 
+[2026-02-12 09:58:01] DB Connect 
+[2026-02-12 09:58:02] check 1/10 : running batch count = '1'
+[2026-02-12 09:58:02] CNT != 1 (CNT=1). waiting...
+[2026-02-12 10:03:03] DB Connect 
+[2026-02-12 10:03:03] check 2/10 : running batch count = '1'
+[2026-02-12 10:03:03] CNT != 1 (CNT=1). waiting...
+[2026-02-12 10:08:04] DB Connect 
+[2026-02-12 10:08:04] check 3/10 : running batch count = '1'
+[2026-02-12 10:08:04] CNT != 1 (CNT=1). waiting...
+[2026-02-12 10:13:04] DB Connect 
+[2026-02-12 10:13:05] check 4/10 : running batch count = '1'
+[2026-02-12 10:13:05] CNT != 1 (CNT=1). waiting...
+[2026-02-12 10:15:52] 
+[2026-02-12 10:15:52] DB Connect 
+[2026-02-12 10:15:52] check 1/10 : running batch count = '0'
+[2026-02-12 10:15:52] batch count is 1. stopping RDS.
+{
+    "DBInstance": {
+        "DBInstanceIdentifier": "db03",
+        "DBInstanceClass": "db.t4g.micro",
+        "Engine": "postgres",
+        "DBInstanceStatus": "stopping",
+        "MasterUsername": "admin01",
+        "Endpoint": {
+            "Address": "db03.c1i64gi0k41z.ap-northeast-2.rds.amazonaws.com",
+            "Port": 5432,
+            "HostedZoneId": "ZLA2NUCOLGUUR"
+        },
+        "AllocatedStorage": 30,
+        "InstanceCreateTime": "2025-10-05T11:27:16.937000+00:00",
+        "PreferredBackupWindow": "00:50-01:20",
+        "BackupRetentionPeriod": 0,
+        "DBSecurityGroups": [],
+        "VpcSecurityGroups": [
+            {
+                "VpcSecurityGroupId": "sg-0d6ab1531781f9bad",
+                "Status": "active"
+            }
+        ],
+        "DBParameterGroups": [
+            {
+                "DBParameterGroupName": "alog-dbt4micro",
+                "ParameterApplyStatus": "in-sync"
+            }
+        ],
+        "AvailabilityZone": "ap-northeast-2a",
+        "DBSubnetGroup": {
+            "DBSubnetGroupName": "default-vpc-08a5a66f1971e99e2",
+            "DBSubnetGroupDescription": "Created from the RDS Management Console",
+            "VpcId": "vpc-08a5a66f1971e99e2",
+            "SubnetGroupStatus": "Complete",
+            "Subnets": [
+                {
+                    "SubnetIdentifier": "subnet-0f47282c0f0c6f737",
+                    "SubnetAvailabilityZone": {
+                        "Name": "ap-northeast-2d"
+                    },
+                    "SubnetOutpost": {},
+                    "SubnetStatus": "Active"
+                },
+                {
+                    "SubnetIdentifier": "subnet-079d73f640ac76c3e",
+                    "SubnetAvailabilityZone": {
+                        "Name": "ap-northeast-2c"
+                    },
+                    "SubnetOutpost": {},
+                    "SubnetStatus": "Active"
+                },
+                {
+                    "SubnetIdentifier": "subnet-0d05a287f3514fea0",
+                    "SubnetAvailabilityZone": {
+                        "Name": "ap-northeast-2a"
+                    },
+                    "SubnetOutpost": {},
+                    "SubnetStatus": "Active"
+                },
+                {
+                    "SubnetIdentifier": "subnet-05069cfbb9ee5e516",
+                    "SubnetAvailabilityZone": {
+                        "Name": "ap-northeast-2b"
+                    },
+                    "SubnetOutpost": {},
+                    "SubnetStatus": "Active"
+                }
+            ]
+        },
+        "PreferredMaintenanceWindow": "sun:01:21-sun:01:51",
+        "PendingModifiedValues": {},
+        "MultiAZ": false,
+        "EngineVersion": "18.1",
+        "AutoMinorVersionUpgrade": false,
+        "ReadReplicaDBInstanceIdentifiers": [],
+        "LicenseModel": "postgresql-license",
+        "Iops": 3000,
+        "OptionGroupMemberships": [
+            {
+                "OptionGroupName": "default:postgres-18",
+                "Status": "in-sync"
+            }
+        ],
+        "PubliclyAccessible": true,
+        "StorageType": "gp3",
+        "DbInstancePort": 0,
+        "StorageEncrypted": true,
+        "KmsKeyId": "arn:aws:kms:ap-northeast-2:856699698595:key/45ccecaa-79bb-4209-902a-e76bbd40f9f0",
+        "DbiResourceId": "db-ST2AZSW5QRBRHKXGYXT4LDRPBM",
+        "CACertificateIdentifier": "rds-ca-rsa2048-g1",
+        "DomainMemberships": [],
+        "CopyTagsToSnapshot": true,
+        "MonitoringInterval": 0,
+        "DBInstanceArn": "arn:aws:rds:ap-northeast-2:856699698595:db:db03",
+        "IAMDatabaseAuthenticationEnabled": false,
+        "DatabaseInsightsMode": "standard",
+        "PerformanceInsightsEnabled": true,
+        "PerformanceInsightsKMSKeyId": "arn:aws:kms:ap-northeast-2:856699698595:key/45ccecaa-79bb-4209-902a-e76bbd40f9f0",
+        "PerformanceInsightsRetentionPeriod": 7,
+        "EnabledCloudwatchLogsExports": [
+            "postgresql"
+        ],
+        "DeletionProtection": true,
+        "AssociatedRoles": [],
+        "MaxAllocatedStorage": 50,
+        "TagList": [],
+        "CustomerOwnedIpEnabled": false,
+        "BackupTarget": "region",
+        "NetworkType": "IPV4",
+        "StorageThroughput": 125,
+        "CertificateDetails": {
+            "CAIdentifier": "rds-ca-rsa2048-g1",
+            "ValidTill": "2026-10-05T11:26:34+00:00"
+        },
+        "DedicatedLogVolume": false,
+        "EngineLifecycleSupport": "open-source-rds-extended-support-disabled"
+    }
+}
+[2026-02-12 10:15:54] Stop DB Execute. -=Complete=-
+[2026-02-12 10:18:05] DB Connect 
+[2026-02-12 10:18:05] check 5/10 : running batch count = ''
+[2026-02-12 10:18:05] CNT is empty. exit.
+[2026-02-12 10:18:05] -=Complete=-
+[2026-02-12 10:58:02] 
+[2026-02-12 10:58:02] DB Connect 
+[2026-02-12 10:58:32] check 1/10 : running batch count = ''
+[2026-02-12 10:58:32] CNT is empty. exit.
+[2026-02-12 10:58:32] -=Complete=-
+[2026-02-12 11:58:02] 
+[2026-02-12 11:58:02] DB Connect 
+[2026-02-12 11:58:32] check 1/10 : running batch count = ''
+[2026-02-12 11:58:32] CNT is empty. exit.
+[2026-02-12 11:58:32] -=Complete=-
+[2026-02-12 12:58:02] 
+[2026-02-12 12:58:02] DB Connect 
+[2026-02-12 12:58:32] check 1/10 : running batch count = ''
+[2026-02-12 12:58:32] CNT is empty. exit.
+[2026-02-12 12:58:32] -=Complete=-
+[2026-02-12 13:58:02] 
+[2026-02-12 13:58:02] DB Connect 
+[2026-02-12 13:58:32] check 1/10 : running batch count = ''
+[2026-02-12 13:58:32] CNT is empty. exit.
+[2026-02-12 13:58:32] -=Complete=-
+[2026-02-12 14:58:02] 
+[2026-02-12 14:58:02] DB Connect 
+[2026-02-12 14:58:32] check 1/10 : running batch count = ''
+[2026-02-12 14:58:32] CNT is empty. exit.
+[2026-02-12 14:58:32] -=Complete=-
+[2026-02-12 15:58:02] 
+[2026-02-12 15:58:02] DB Connect 
+[2026-02-12 15:58:32] check 1/10 : running batch count = ''
+[2026-02-12 15:58:32] CNT is empty. exit.
+[2026-02-12 15:58:32] -=Complete=-
+[2026-02-12 16:58:02] 
+[2026-02-12 16:58:02] DB Connect 
+[2026-02-12 16:58:32] check 1/10 : running batch count = ''
+[2026-02-12 16:58:32] CNT is empty. exit.
+[2026-02-12 16:58:32] -=Complete=-
+[2026-02-12 17:58:01] 
+[2026-02-12 17:58:01] DB Connect 
+[2026-02-12 17:58:31] check 1/10 : running batch count = ''
+[2026-02-12 17:58:31] CNT is empty. exit.
+[2026-02-12 17:58:31] -=Complete=-
+[2026-02-12 18:58:02] 
+[2026-02-12 18:58:02] DB Connect 
+[2026-02-12 18:58:32] check 1/10 : running batch count = ''
+[2026-02-12 18:58:32] CNT is empty. exit.
+[2026-02-12 18:58:32] -=Complete=-
+[2026-02-12 19:58:01] 
+[2026-02-12 19:58:01] DB Connect 
+[2026-02-12 19:58:31] check 1/10 : running batch count = ''
+[2026-02-12 19:58:31] CNT is empty. exit.
+[2026-02-12 19:58:31] -=Complete=-
+[2026-02-12 20:58:01] 
+[2026-02-12 20:58:01] DB Connect 
+[2026-02-12 20:58:32] check 1/10 : running batch count = ''
+[2026-02-12 20:58:32] CNT is empty. exit.
+[2026-02-12 20:58:32] -=Complete=-
+[2026-02-12 21:58:02] 
+[2026-02-12 21:58:02] DB Connect 
+[2026-02-12 21:58:32] check 1/10 : running batch count = ''
+[2026-02-12 21:58:32] CNT is empty. exit.
+[2026-02-12 21:58:32] -=Complete=-
+[2026-02-12 22:58:01] 
+[2026-02-12 22:58:01] DB Connect 
+[2026-02-12 22:58:32] check 1/10 : running batch count = ''
+[2026-02-12 22:58:32] CNT is empty. exit.
+[2026-02-12 22:58:32] -=Complete=-
+[2026-02-12 23:58:01] 
+[2026-02-12 23:58:01] DB Connect 
+[2026-02-12 23:58:31] check 1/10 : running batch count = ''
+[2026-02-12 23:58:31] CNT is empty. exit.
+[2026-02-12 23:58:31] -=Complete=-

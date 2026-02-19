@@ -1,0 +1,23 @@
+09:05:05 -2
+2026-02-19 Start ga to db 2026-02-19
+09:05:05   ga 52W Start 
+09:05:05 
+09:05:05   ga Start 2026-02-17
+09:05:05     ga Day Clean 2026-02-17
+09:08:36     ga Target Complete 2026-02-17
+09:08:36   ga End 2026-02-17
+09:09:10   Cache Complete   2026-02-17 a
+09:09:18   Cache SKIP  2026-02-17 p
+09:09:18   elapsed time : 252.744초
+09:09:18 
+09:09:18   ga Start 2026-02-18
+09:09:18     ga Day Clean 2026-02-18
+09:12:48     ga Target Complete 2026-02-18
+09:12:48   ga End 2026-02-18
+09:13:17   Cache Complete   2026-02-18 a
+09:13:25   Cache SKIP  2026-02-18 p
+09:13:25   elapsed time : 247.436초
+09:13:25 END ga to db 2026-02-19
+09:13:25 
+09:13:25 Create pday.json 2026-02-18
+09:13:25 -=Complete=-

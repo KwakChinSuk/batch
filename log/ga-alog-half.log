@@ -1,0 +1,51 @@
+09:06:06 -2
+2026-02-13 Start ga to db 2026-02-13
+09:06:07   ga 52W Start 
+09:06:08   ga 52W Start 2025-02-20 3418
+09:06:08     ga Day Clean 2025-02-20
+09:12:13   ga 52W Complete 2026-02-19
+09:12:13 
+09:12:13 
+09:12:13   ga Start 2026-02-11
+09:12:13     ga Day Clean 2026-02-11
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/google/api_core/grpc_helpers.py", line 76, in error_remapped_callable
+    return callable_(*args, **kwargs)
+  File "/usr/local/lib64/python3.9/site-packages/grpc/_interceptor.py", line 277, in __call__
+    response, ignored_call = self._with_call(
+  File "/usr/local/lib64/python3.9/site-packages/grpc/_interceptor.py", line 332, in _with_call
+    return call.result(), call
+  File "/usr/local/lib64/python3.9/site-packages/grpc/_channel.py", line 440, in result
+    raise self
+  File "/usr/local/lib64/python3.9/site-packages/grpc/_interceptor.py", line 315, in continuation
+    response, call = self._thunk(new_method).with_call(
+  File "/usr/local/lib64/python3.9/site-packages/grpc/_channel.py", line 1192, in with_call
+    return _end_unary_response_blocking(state, call, True, None)
+  File "/usr/local/lib64/python3.9/site-packages/grpc/_channel.py", line 1006, in _end_unary_response_blocking
+    raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.DEADLINE_EXCEEDED
+	details = "Deadline Exceeded"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_status:4, grpc_message:"Deadline Exceeded"}"
+>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ec2-user/alog/alog-half/alog_ga_app/ga_to_db.py", line 797, in <module>
+    fn_ga_etl(pymd)
+  File "/home/ec2-user/alog/alog-half/alog_ga_app/ga_to_db.py", line 251, in fn_ga_etl
+    fn_ga_cust_download(pymd)
+  File "/home/ec2-user/alog/alog-half/alog_ga_app/ga_to_db.py", line 349, in fn_ga_cust_download
+    fn_ga_download_custno(pymd,"a",pcustname)
+  File "/home/ec2-user/alog/alog-half/alog_ga_app/ga_to_db.py", line 517, in fn_ga_download_custno
+    rowcnt = fn_ga_download_custno_todb(client.run_report(request),pcustno,pymd,pdevice)
+  File "/usr/local/lib/python3.9/site-packages/google/analytics/data_v1beta/services/beta_analytics_data/client.py", line 819, in run_report
+    response = rpc(
+  File "/usr/local/lib/python3.9/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/google/api_core/grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.DeadlineExceeded: 504 Deadline Exceeded
