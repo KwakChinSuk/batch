@@ -19,7 +19,7 @@ fi
 
 # 변경된 파일 중 .json, .csv, cfg.py 제외
 git add -A 
-#git reset '*.json' '*.csv' '*.log' '*.pyc' '**/__pycache__/*' 
+git reset '*.json' '*.csv' '*.log' '*.pyc' '**/__pycache__/*' '*.gz'
 MSG="auto: $(date '+%F %T %Z')"
 git commit -m "$MSG" || exit 0
 
