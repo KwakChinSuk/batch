@@ -10,7 +10,10 @@ cd "${BASE_DIR}" || exit 1
 
 ${PYTHON} alog_ga_app/ga_to_db.py INIT,-2 > "${LOG_DIR}/ga-INIT-${APP_NAME}.log" 2>&1
 
-${PYTHON} alog_ga_app/ga_to_db.py -2 > "${LOG_DIR}/ga-${APP_NAME}.log" 2>&1
+${PYTHON} alog_ga_app/ga_to_db.py -2  > "${LOG_DIR}/ga-${APP_NAME}.log" 2>&1
+
+## 로그 확인 방법
+##${PYTHON} alog_ga_app/ga_to_db.py -2 Y
 
 chown -R ec2-user:ec2-user "${BASE_DIR}"
 
