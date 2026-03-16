@@ -10,7 +10,7 @@ cd "${BASE_DIR}" || exit 1
 
 ${PYTHON} alog_ga_app/ga_to_db.py INIT,-2 > "${LOG_DIR}/ga-INIT-${APP_NAME}.log" 2>&1
 
-${PYTHON} alog_ga_app/ga_to_db.py -2  > "${LOG_DIR}/ga-${APP_NAME}.log" 2>&1
+${PYTHON} alog_ga_app/ga_to_db.py -2 Y  > "${LOG_DIR}/ga-${APP_NAME}.log" 2>&1
 
 ## 로그 확인 방법
 ##${PYTHON} alog_ga_app/ga_to_db.py -2 Y
@@ -35,11 +35,11 @@ case "${APP_NAME}" in
         ;;
 esac
 
-sleep 1
+#sleep 1
 # 설정된 ${TARGET_URL} 변수를 사용하여 curl 요청
-/usr/bin/curl -f -s -S "${TARGET_URL}?pbatchcode=alog-api@cskwak-152504.iam.gserviceaccount.com" > /home/ec2-user/batch/log-www-check/ga-complete-${APP_NAME}.log 2>&1
+#/usr/bin/curl -f -s -S "${TARGET_URL}?pbatchcode=alog-api@cskwak-152504.iam.gserviceaccount.com" > /home/ec2-user/batch/log-www-check/ga-complete-${APP_NAME}.log 2>&1
 
 sleep 1
-${SENDMAIL} [${APP_NAME}]ga-complete /home/ec2-user/batch/www-check-log/ga-complete-${APP_NAME}.log
+${SENDMAIL} [${APP_NAME}]ga-complete ${LOG_DIR}/ga-${APP_NAME}.log
 
 
