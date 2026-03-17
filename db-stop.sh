@@ -14,7 +14,7 @@ TODAY=$(date '+%Y-%m-%d')
 
 LOG_FILE="${LOG_DIR}/db-stop.log"
 
-MAX_LOOP=10         # 5분 × 12 = 60분
+MAX_LOOP=3         # 5분 × 12 = 60분
 SLEEP_SEC=180       # 1분= 60
 
 export PGPASSWORD="${DB_PASS}"
