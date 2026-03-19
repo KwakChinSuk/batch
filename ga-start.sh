@@ -1,8 +1,10 @@
 #!/bin/bash
 
+#APP_NAME="${1:-alog-devtest}" 
 LOG_DIR="/home/ec2-user/batch/log"
 PYTHON="/usr/bin/python3"
 SENDMAIL="/home/ec2-user/bin/sendmail-file"
+
 
 APP_NAME="alog-bori"
 BASE_DIR="/home/ec2-user/alog/${APP_NAME}"
