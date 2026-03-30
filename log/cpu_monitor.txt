@@ -1,0 +1,8 @@
+--------------------------------------------------
+[2026-03-30 11:48:02] High CPU Usage Detected (Over 50%)
+  PID  %CPU  COMMAND
+  11695 50.0 /usr/bin/python3 alog_ga_app/ga_to_db.py -2 Y
+--------------------------------------------------
+[2026-03-30 15:33:01] High CPU Usage Detected (Over 50%)
+  PID  %CPU  COMMAND
+  27344 64.0 /usr/bin/python3 manage.py runserver 0.0.0.0:8000
