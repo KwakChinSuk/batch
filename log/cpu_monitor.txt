@@ -6,3 +6,7 @@
 [2026-03-30 15:33:01] High CPU Usage Detected (Over 50%)
   PID  %CPU  COMMAND
   27344 64.0 /usr/bin/python3 manage.py runserver 0.0.0.0:8000
+--------------------------------------------------
+[2026-03-31 09:49:01] High CPU Usage Detected (Over 50%)
+  PID  %CPU  COMMAND
+  92436 68.0 /usr/bin/python3 manage.py runserver 0.0.0.0:8002

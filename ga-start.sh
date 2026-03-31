@@ -24,10 +24,10 @@ ${SENDMAIL} "[${APP_NAME}]ga-complete" "${LOG_DIR}/ga-${APP_NAME}.log"
 
 
 
-if [ "${APP_NAME}" == "alog-half" ]; then    
-  sleep 30
-  ${BATCH_DIR}/db-stop.sh    
-fi
+#if [ "${APP_NAME}" == "alog-half" ]; then    
+#  sleep 30
+#  ${BATCH_DIR}/db-stop.sh    
+#fi
 
 
 
